@@ -1,0 +1,16 @@
+body{
+  font-family: $main-font;
+  font-size: $font-md;
+  font-weight: $font-regular
+
+}
+a{
+  cursor: pointer;
+}
+
+
+@media (min-width: 1600px) {
+  .container{
+    max-width: 1600px;
+  }
+}

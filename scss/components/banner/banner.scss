@@ -1,0 +1,22 @@
+.banner{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/img/h.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  h1{
+    color: $white-color;
+    font-weight: $font-bold;
+    font-size: $font-xxl;
+  }
+  &__scroll{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
