@@ -1,23 +1,29 @@
-.header{
+.header {
   position: absolute;
   width: 100%;
   padding-top: 50px;
-  //&-content-wrapper{
-    //position: relative;
-  //}
-  &__top{
+  z-index: 1;
+
+  &-content-wrapper {
+    position: relative;
+  }
+
+  &__top {
     font-size: $font-sm;
 
-    .container{
+    .container-lg {
       position: relative;
+
     }
-    &-content{
+
+    &-content {
       position: absolute;
       right: 0;
       top: -16px;
       z-index: 1;
-      & > div:not(:last-child){
-        &:after{
+
+      & > div:not(:last-child) {
+        &:after {
           content: '';
           display: inline-block;
           width: 7px;
@@ -28,76 +34,99 @@
         }
       }
     }
-    &-lang{
-      input[name="lang"]{
+
+    &-lang {
+      input[name="lang"] {
         display: none;
       }
-      input[name="lang"]:checked + span{
+
+      input[name="lang"]:checked + span {
         background: $accent-color;
         transition: 1s;
-        &:hover{
+
+        &:hover {
           background: $white-color-20;
         }
       }
-      label span{
+
+      label span {
         cursor: pointer;
         font-weight: $font-bold;
         color: $white-color;
         padding: 5px 7px;
         border-radius: 8px;
         display: inline-block;
-        &:hover{
+
+        &:hover {
           background: $white-color-20;
         }
       }
     }
-    &-address,&-phone{
-      a{
+
+    &-address, &-phone {
+      a {
         color: $white-color;
         text-decoration: none;
-        &:hover{
+
+        &:hover {
           color: $accent-color;
           transition: 1s;
         }
       }
     }
-    &-phone{
-      a{
+
+    &-phone {
+      a {
         font-weight: $font-bold;
       }
     }
-    &-social{
-      a{
+
+    &-social {
+      a {
         text-decoration: none;
+
         path {
           fill: $white-color;
         }
-        &:hover{
-          path{
+
+        &:hover {
+          path {
             transition: 1s;
             fill: $accent-color;
           }
         }
       }
     }
+  }
 
-
-
+  .navbar {
+    &-brand {
+      margin-top: -20px;
     }
 
-  .navbar{
-    &-nav{
+    &-nav {
       width: 100%;
       justify-content: flex-end;
       gap: 15px;
+      padding-top: 15px;
     }
 
-    .nav-link{
+    .nav-link {
       font-weight: $font-bold;
       padding-bottom: 3px;
-      &.active{
+
+      &.active {
         border-bottom: 2px solid;
       }
     }
+
+    &-toggler {
+      --bs-border-width: 0;
+
+      &:focus {
+
+        --bs-navbar-toggler-focus-width: 0.15rem white;
+      }
+    }
   }
-  }
+}

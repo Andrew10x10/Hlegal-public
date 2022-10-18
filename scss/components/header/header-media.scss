@@ -1,0 +1,58 @@
+.header{
+
+  @media (min-width: 1024px) {
+    &__top-content{
+     justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 767px) {
+    .navbar .container-lg{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 1024px){
+    &__top-content{
+      position: static;
+    }
+    .navbar{
+      padding: 15px 0 0 0;
+      &-brand{
+        margin: 0;
+      }
+      &-nav{
+        padding-top: 0;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    &{
+      padding-top: 0;
+    }
+    &__top{
+      background-color: $white-color-20;
+
+      &-content{
+        margin-bottom: 0;
+        justify-content: space-between;
+        & > div:not(:last-child):after{
+         content: unset;
+        }
+
+      }
+      .container-lg{
+        padding: 10px 15px;
+      }
+      &-address, &-social{
+        display: none;
+      }
+    }
+  }
+  
+  
+  
+  
+}
