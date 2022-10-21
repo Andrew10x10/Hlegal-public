@@ -1,16 +1,45 @@
-body{
+body {
   font-family: $main-font;
   font-size: $font-md;
   font-weight: $font-regular
 
 }
-a{
+
+.bg-gradient {
+  position: relative;
+  border-radius: 0 0 $default-br $default-br;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    border-radius: 0 0 $default-br $default-br;
+    position: absolute;
+    height: $gradient-shadow-height;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before {
+    bottom: -10px;
+    background-color: #CACADB;
+    width: calc(100% - 20px)
+  }
+
+  &:after {
+    bottom: -20px;
+    background-color: #E7E7F2;
+    width: calc(100% - 40px)
+  }
+}
+
+a {
   cursor: pointer;
 }
 
 
 @media (min-width: 1600px) {
-  .container{
+  .container {
     max-width: 1600px;
   }
 }
+
