@@ -24,6 +24,21 @@
   --bs-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
+.list-group {
+  --bs-list-group-color: rgba(255, 255, 255, 0.3);
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-color: none;
+  --bs-list-group-active-bg: none;
+  --bs-list-group-active-border-color: none;
+  --bs-list-group-border-width: none;
+  --bs-list-group-action-hover-color: #F0145A;
+  --bs-list-group-action-hover-bg: none;
+  --bs-list-group-action-active-color: white;
+  --bs-list-group-action-active-bg: rgba(255, 255, 255, 0.2);
+  --bs-list-group-disabled-color: none;
+  --bs-list-group-disabled-bg: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
@@ -249,7 +264,7 @@ a {
 .banner h1 {
   color: #fff;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 34px;
 }
 .banner__scroll {
   position: absolute;
@@ -257,6 +272,68 @@ a {
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
+}
+
+.menu-scroll {
+  padding: 60px 0;
+}
+.menu-scroll .list-group {
+  font-weight: 700;
+  font-size: 38px;
+}
+.menu-scroll .list-group .list-group-item {
+  padding: 5px 10px;
+}
+.menu-scroll .list-group .active {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-scroll .vr {
+  width: 4px;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-scroll .tab-pane {
+  color: white;
+}
+.menu-scroll .tab-pane > h4 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 6% 0 30px;
+}
+.menu-scroll .tab-pane p {
+  font-size: 19px;
+}
+
+@media (max-width: 1399px) {
+  .menu-scroll .container {
+    max-width: 1200px;
+  }
+  .menu-scroll .list-group {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1199px) {
+  .menu-scroll .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 991px) {
+  .menu-scroll .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .menu-scroll .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .menu-scroll .container {
+    max-width: 320px;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
