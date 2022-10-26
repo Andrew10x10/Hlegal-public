@@ -7,35 +7,53 @@
     .list-group {
       font-size: $font-xxl;
     }
-
   }
 
   @media (max-width: 1199px) {
     .container {
       max-width: 992px;
     }
-    &__media-horizon{
-      //flex-direction: column;
-    }
     .list-group{
-      //display: flex;
-      //flex-direction: row;
-      //width: 100%;
+      font-size: $font-xl;
     }
   }
-  @media (max-width: 991px) {
-    .container {
-      max-width: 768px;
-    }
-  }
+
   @media (max-width: 767px) {
     .container {
       max-width: 576px;
     }
+    .list-group {
+      display: flex;
+      flex-direction: row;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: scroll;
+    }
+    .vr{
+      opacity: 0;
+    }
+    hr{
+      opacity: 1;
+      border: 2px solid;
+      width: 100%;
+      color: $white-color-30;
+    }
   }
+
   @media (max-width: 576px) {
     .container {
       max-width: 320px;
     }
+    .list-group{
+      font-size: $font-lg;
+    }
+    .tab-pane > h4{
+      font-size: 20px;
+    }
   }
+
+
+
+
+
 }

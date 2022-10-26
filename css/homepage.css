@@ -319,20 +319,40 @@ a {
   .menu-scroll .container {
     max-width: 992px;
   }
-}
-@media (max-width: 991px) {
-  .menu-scroll .container {
-    max-width: 768px;
+  .menu-scroll .list-group {
+    font-size: 30px;
   }
 }
 @media (max-width: 767px) {
   .menu-scroll .container {
     max-width: 576px;
   }
+  .menu-scroll .list-group {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: scroll;
+  }
+  .menu-scroll .vr {
+    opacity: 0;
+  }
+  .menu-scroll hr {
+    opacity: 1;
+    border: 2px solid;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 @media (max-width: 576px) {
   .menu-scroll .container {
     max-width: 320px;
+  }
+  .menu-scroll .list-group {
+    font-size: 24px;
+  }
+  .menu-scroll .tab-pane > h4 {
+    font-size: 20px;
   }
 }
 

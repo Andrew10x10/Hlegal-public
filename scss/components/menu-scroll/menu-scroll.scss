@@ -19,11 +19,10 @@
     width: 4px;
     height: 100%;
     opacity: 1;
-    background-color: $white-color-30
+    background-color: $white-color-30;
   }
   .tab-pane{
     color: white;
-
    &>h4{
      font-weight: $font-bold;
      font-size: $font-xl;
@@ -32,6 +31,5 @@
     p{
       font-size: $font-md;
     }
-
   }
 }
