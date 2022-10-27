@@ -1,34 +1,38 @@
-.menu-scroll{
-  padding: 60px 0;
+.menu-scroll {
+  padding: 60px 0 30px;
 
-
-  .list-group{
+  .list-group {
     font-weight: $font-bold;
     font-size: $font-big;
 
-    .list-group-item{
+    .list-group-item {
       padding: 5px 10px;
     }
+
     .active {
       background: $red-text-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
-  .vr{
+
+  .vr {
     width: 4px;
     height: 100%;
     opacity: 1;
     background-color: $white-color-30;
   }
-  .tab-pane{
+
+  .tab-pane {
     color: white;
-   &>h4{
-     font-weight: $font-bold;
-     font-size: $font-xl;
-     margin: 6% 0 30px;
-   }
-    p{
+
+    & > h4 {
+      font-weight: $font-bold;
+      font-size: $font-xl;
+      margin: 6% 0 30px;
+    }
+
+    p {
       font-size: $font-md;
     }
   }

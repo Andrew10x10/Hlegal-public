@@ -1,0 +1,65 @@
+.our-service {
+  padding: 30px 0 60px;
+  &__description {
+    padding-bottom: 22px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: $font-s;
+      font-weight: $font-bold;
+      color: $active-hover-color;
+      padding-bottom: 10px;
+
+      &:hover, &:focus-visible {
+        color: $accent-color;
+        transition: .5s;
+        transform: scaleX(1.02) translate(30px);;
+      }
+
+      svg {
+        width: 20px;
+      }
+
+      &:hover path, &:hover svg, &:focus-visible path, &:focus-visible svg {
+        stroke: $accent-color;
+        transition: .5s;
+        transform: translate(20%);
+      }
+
+
+    }
+
+    h3 {
+      font-weight: $font-bold;
+      font-size: $font-big;
+      background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+  }
+
+  &__info-columns {
+    gap: 60px;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: $active-regular;
+      font-size: $font-most-md;
+      font-weight: $font-bold;
+    }
+
+    p {
+      font-size: 16px;
+      color: $white-color;
+      margin-bottom: 0;
+    }
+  }
+
+}

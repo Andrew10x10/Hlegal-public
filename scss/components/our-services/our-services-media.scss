@@ -1,0 +1,23 @@
+.our-service {
+
+  @media (max-width: 767px) {
+    .container {
+      max-width: 576px;
+    }
+    &__info-columns {
+      row-gap: 30px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      max-width: 320px;
+    }
+    &__description {
+      h3 {
+        font-size: $font-xl;
+      }
+    }
+
+  }
+}

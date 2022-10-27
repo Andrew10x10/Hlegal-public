@@ -275,7 +275,7 @@ a {
 }
 
 .menu-scroll {
-  padding: 60px 0;
+  padding: 60px 0 30px;
 }
 .menu-scroll .list-group {
   font-weight: 700;
@@ -353,6 +353,76 @@ a {
   }
   .menu-scroll .tab-pane > h4 {
     font-size: 20px;
+  }
+}
+
+.our-service {
+  padding: 30px 0 60px;
+}
+.our-service__description {
+  padding-bottom: 22px;
+}
+.our-service__description a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0085FF;
+  padding-bottom: 10px;
+}
+.our-service__description a:hover, .our-service__description a:focus-visible {
+  color: #F0145A;
+  transition: 0.5s;
+  transform: scaleX(1.02) translate(30px);
+}
+.our-service__description a svg {
+  width: 20px;
+}
+.our-service__description a:hover path, .our-service__description a:hover svg, .our-service__description a:focus-visible path, .our-service__description a:focus-visible svg {
+  stroke: #F0145A;
+  transition: 0.5s;
+  transform: translate(20%);
+}
+.our-service__description h3 {
+  font-weight: 700;
+  font-size: 38px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.our-service__info-columns {
+  gap: 60px;
+}
+.our-service__info-columns img {
+  margin-bottom: 30px;
+}
+.our-service__info-columns h3 {
+  color: #24A3FF;
+  font-size: 22px;
+  font-weight: 700;
+}
+.our-service__info-columns p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .our-service .container {
+    max-width: 576px;
+  }
+  .our-service__info-columns {
+    row-gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .our-service .container {
+    max-width: 320px;
+  }
+  .our-service__description h3 {
+    font-size: 30px;
   }
 }
 
