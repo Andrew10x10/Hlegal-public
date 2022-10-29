@@ -2,17 +2,14 @@
   padding: 60px 0 30px;
 
   .list-group {
-    font-weight: $font-bold;
-    font-size: $font-big;
+    @include font-big;
 
     .list-group-item {
       padding: 5px 10px;
     }
 
     .active {
-      background: $red-text-gradient;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include red-gradient;
     }
   }
 
@@ -27,8 +24,7 @@
     color: white;
 
     & > h4 {
-      font-weight: $font-bold;
-      font-size: $font-xl;
+      @include font-xl;
       margin: 6% 0 30px;
     }
 

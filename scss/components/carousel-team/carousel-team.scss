@@ -1,0 +1,47 @@
+.carousel-team {
+  padding-top: 60px;
+
+  .carousel-inner {
+    background-color: #F5F5FA;
+    border-radius: 12px;
+  }
+
+  &__caption {
+    z-index: 1;
+    padding-top: 30px;
+    @include section-link;
+
+    a {
+      padding-bottom: 5px;
+    }
+
+    &-description {
+      font-weight: $font-bold;
+      font-size: $font-xxl;
+      @include red-gradient;
+    }
+
+    &-name {
+      font-weight: $font-bold;
+      font-size: $font-sm;
+      color: $grey-bg-text;
+    }
+
+    &-post {
+      font-size: $font-s;
+    }
+  }
+
+
+  .carousel-item {
+    opacity: 0;
+    display: flex;
+
+    &.active {
+      transition: .5s;
+      opacity: 1;
+    }
+  }
+
+
+}
