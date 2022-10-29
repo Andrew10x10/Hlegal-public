@@ -1,6 +1,17 @@
 .carousel-team {
   padding-top: 60px;
 
+  .carousel-indicators{
+   bottom: -80px;
+    z-index: 1;
+
+    & [data-bs-target]{
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $active-regular;
+    }
+  }
   .carousel-inner {
     background-color: #F5F5FA;
     border-radius: 12px;
@@ -8,7 +19,7 @@
 
   &__caption {
     z-index: 1;
-    padding-top: 30px;
+    margin-top: 30px;
     @include section-link;
 
     a {
@@ -19,6 +30,7 @@
       font-weight: $font-bold;
       font-size: $font-xxl;
       @include red-gradient;
+      margin-bottom: 30px;
     }
 
     &-name {
