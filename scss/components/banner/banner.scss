@@ -12,8 +12,7 @@
 
   h1{
     color: $white-color;
-    font-weight: $font-bold;
-    font-size: $font-xxl;
+    @extend %font-xl
   }
   &__scroll{
     position: absolute;

@@ -68,10 +68,10 @@
     .navbar-collapse{
       background-color: $white-color;
       padding: 12px;
-      border-radius: $default-br;
+      border-radius: $default-border-radius;
       margin-top: 20px;
       .nav-link{
-        border-radius: $default-br;
+        border-radius: $default-border-radius;
         padding: 7px 0;
         text-align: center;
         background-color: $grey-bg;

@@ -39,6 +39,60 @@
   --bs-list-group-disabled-bg: none;
 }
 
+.carousel-team__caption-description, .our-service__description h3, .menu-scroll .list-group .active {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.company__title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.carousel-team__caption-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.menu-scroll .tab-pane > h4, .banner h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.carousel-team__caption-description {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.our-service__description h3, .menu-scroll .list-group {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.carousel-team__caption a, .our-service__description a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0085FF;
+}
+.carousel-team__caption a:hover, .our-service__description a:hover, .carousel-team__caption a:focus-visible, .our-service__description a:focus-visible {
+  color: #F0145A;
+  transition: 0.5s;
+  transform: scaleX(1.02) translate(15px);
+}
+.carousel-team__caption a svg, .our-service__description a svg {
+  width: 20px;
+}
+.carousel-team__caption a:hover path, .our-service__description a:hover path, .carousel-team__caption a:hover svg, .our-service__description a:hover svg, .carousel-team__caption a:focus-visible path, .our-service__description a:focus-visible path, .carousel-team__caption a:focus-visible svg, .our-service__description a:focus-visible svg {
+  stroke: #F0145A;
+  transition: 0.5s;
+  transform: translate(20%);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
@@ -263,8 +317,6 @@ a {
 }
 .banner h1 {
   color: #fff;
-  font-weight: 700;
-  font-size: 34px;
 }
 .banner__scroll {
   position: absolute;
@@ -277,17 +329,8 @@ a {
 .menu-scroll {
   padding: 60px 0 30px;
 }
-.menu-scroll .list-group {
-  font-weight: 700;
-  font-size: 38px;
-}
 .menu-scroll .list-group .list-group-item {
   padding: 5px 10px;
-}
-.menu-scroll .list-group .active {
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .menu-scroll .vr {
   width: 4px;
@@ -299,8 +342,6 @@ a {
   color: white;
 }
 .menu-scroll .tab-pane > h4 {
-  font-weight: 700;
-  font-size: 38px;
   margin: 6% 0 30px;
 }
 .menu-scroll .tab-pane p {
@@ -363,36 +404,7 @@ a {
   padding-bottom: 22px;
 }
 .our-service__description a {
-  display: block;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  color: #0085FF;
-}
-.our-service__description a:hover, .our-service__description a:focus-visible {
-  color: #F0145A;
-  transition: 0.5s;
-  transform: scaleX(1.02) translate(15px);
-}
-.our-service__description a svg {
-  width: 20px;
-}
-.our-service__description a:hover path, .our-service__description a:hover svg, .our-service__description a:focus-visible path, .our-service__description a:focus-visible svg {
-  stroke: #F0145A;
-  transition: 0.5s;
-  transform: translate(20%);
-}
-.our-service__description a {
   padding-bottom: 10px;
-}
-.our-service__description h3 {
-  font-weight: 700;
-  font-size: 38px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .our-service__info-columns {
   gap: 60px;
@@ -463,44 +475,16 @@ a {
   padding: 30px;
 }
 .carousel-team__caption a {
-  display: block;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  color: #0085FF;
-}
-.carousel-team__caption a:hover, .carousel-team__caption a:focus-visible {
-  color: #F0145A;
-  transition: 0.5s;
-  transform: scaleX(1.02) translate(15px);
-}
-.carousel-team__caption a svg {
-  width: 20px;
-}
-.carousel-team__caption a:hover path, .carousel-team__caption a:hover svg, .carousel-team__caption a:focus-visible path, .carousel-team__caption a:focus-visible svg {
-  stroke: #F0145A;
-  transition: 0.5s;
-  transform: translate(20%);
-}
-.carousel-team__caption a {
   padding-bottom: 5px;
 }
 .carousel-team__caption-description {
-  font-weight: 700;
-  font-size: 34px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
 }
 .carousel-team__caption-name {
-  font-weight: 700;
-  font-size: 16px;
   color: #B3B3BA;
 }
 .carousel-team__caption-post {
+  color: #B3B3BA;
   font-size: 14px;
 }
 .carousel-team .carousel-item {
@@ -540,6 +524,34 @@ a {
   .carousel-team__wrapper .photo-team {
     width: 110%;
   }
+}
+
+.company {
+  padding-top: 105px;
+}
+.company__title {
+  text-transform: uppercase;
+  color: #323264;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.company-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.company .row div {
+  background-color: #686887;
+  border: 1px solid;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.company .row div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=homepage.css.map */

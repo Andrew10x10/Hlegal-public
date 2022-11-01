@@ -2,14 +2,14 @@
   padding: 60px 0 30px;
 
   .list-group {
-    @include font-big;
+    @extend %font-big;
 
     .list-group-item {
       padding: 5px 10px;
     }
 
     .active {
-      @include red-gradient;
+      @extend %red-gradient;
     }
   }
 
@@ -24,7 +24,7 @@
     color: white;
 
     & > h4 {
-      @include font-xl;
+      @extend %font-xl;
       margin: 6% 0 30px;
     }
 

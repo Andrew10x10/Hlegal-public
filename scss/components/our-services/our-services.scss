@@ -4,14 +4,14 @@
   &__description {
     padding-bottom: 22px;
 
-    @include section-link;
+    @extend %section-link;
     a {
       padding-bottom: 10px;
     }
 
     h3 {
-      @include font-big;
-      @include red-gradient;
+      @extend %font-big;
+      @extend %red-gradient;
     }
   }
 
