@@ -16,10 +16,19 @@
     background-color: #F5F5FA;
     border-radius: 12px;
   }
+  &__wrapper{
+
+    .photo-team{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__caption {
+
     z-index: 1;
-    margin-top: 30px;
+    padding: 30px;
     @include section-link;
 
     a {

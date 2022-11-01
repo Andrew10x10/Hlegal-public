@@ -8,11 +8,11 @@
   font-weight: $font-bold;
   font-size: $font-big;
 }
-
 @mixin font-xl {
   font-weight: $font-bold;
   font-size: $font-big;
 }
+
 @mixin section-link {
   a {
     display: block;

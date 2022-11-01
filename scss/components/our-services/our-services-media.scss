@@ -1,5 +1,14 @@
 .our-service {
 
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 1600px;
+    }
+    &__info-columns{
+      justify-content: space-between;
+    }
+  }
+
   @media (max-width: 767px) {
     .container {
       max-width: 576px;
