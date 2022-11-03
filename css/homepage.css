@@ -93,6 +93,12 @@
   transform: translate(20%);
 }
 
+.company .row a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
@@ -537,21 +543,103 @@ a {
   text-align: center;
   margin-bottom: 30px;
 }
-.company-wrapper {
-  border-radius: 12px;
-  overflow: hidden;
+.company .row a:hover {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  animation: shake-logo 0.3s linear;
 }
-.company .row div {
-  background-color: #686887;
-  border: 1px solid;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+@keyframes shake-logo {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
-.company .row div img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.company__logo-first {
+  background-color: #1C4280;
+}
+.company__logo-second {
+  padding: 44px 12px;
+  background-color: #143646;
+}
+.company__logo-third {
+  background-color: #F48B30;
+}
+.company__logo-third, .company__logo-fifth {
+  padding: 38px 12px;
+}
+.company__logo-fourth {
+  background-color: #9E4DC3;
+}
+.company__logo-fourth, .company__logo-tenth {
+  padding: 39px 12px;
+}
+.company__logo-fifth {
+  background-color: #FD9339;
+}
+.company__logo-first, .company__logo-sixth {
+  padding: 36px 12px;
+}
+.company__logo-sixth {
+  background-color: #E2E2E4;
+}
+.company__logo-seventh {
+  padding: 29px 12px;
+  background-color: #C71C36;
+}
+.company__logo-eight {
+  padding: 22px 12px;
+  background-color: #DCF3F9;
+}
+.company__logo-nineth {
+  padding: 29px 12px;
+  background-color: #EAEAEA;
+}
+.company__logo-tenth {
+  background-color: #282240;
+}
+.company__logo-eleventh {
+  padding: 37px 12px;
+  background-color: #1D4568;
+}
+.company__logo-twelfth {
+  padding: 12px 12px;
+  background-color: #000;
+}
+
+@media (max-width: 2800px) and (min-width: 1405px) {
+  .company .container {
+    max-width: 1400px;
+  }
+}
+@media (min-width: 1450px) {
+  .company .row {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1440px) {
+  .company .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 991px) and (min-width: 576px) {
+  .company img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
