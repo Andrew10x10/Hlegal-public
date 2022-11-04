@@ -14,7 +14,7 @@
     @extend %d-center;
 
     &:hover {
-      border: 1px solid $white-color;
+      border: 1px solid #000;
       border-radius: 10px;
       animation: shake-logo 0.3s linear;
 

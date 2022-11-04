@@ -1,0 +1,30 @@
+.articles {
+  @media (max-width: 767px) and (min-width: 576px) {
+    .container {
+      max-width: 576px;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+
+      &-card {
+        width: calc(100% / 2 - 15px);
+
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 320px;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+
+      &-card {
+        width: 100%;
+      }
+    }
+  }
+}

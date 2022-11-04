@@ -1,13 +1,12 @@
-//html{
-  //scroll-behavior: smooth;
-// плавная прокрутка без джаваскрипта
-//}
+html{
+  scroll-behavior: smooth;
+ //плавная прокрутка без джаваскрипта
+}
 body {
   font-family: $main-font;
   font-size: $font-md;
   font-weight: $font-regular
 }
-
 .bg-gradient {
   position: relative;
   border-radius: 0 0 $default-border-radius $default-border-radius;
