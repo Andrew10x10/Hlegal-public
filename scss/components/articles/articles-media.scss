@@ -11,6 +11,10 @@
 
         &:last-child {
           width: 100%;
+
+          img {
+            object-fit: cover;
+          }
         }
       }
     }
@@ -18,6 +22,11 @@
   @media (max-width: 576px) {
     .container {
       max-width: 320px;
+    }
+    &__heading{
+      &-title{
+        font-size: $font-xl;
+      }
     }
     &__wrapper {
       flex-wrap: wrap;
