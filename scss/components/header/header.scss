@@ -42,7 +42,7 @@
 
       input[name="lang"]:checked + span {
         background: $accent-color;
-        transition: .9ms;
+        transition: 1s;
 
         &:hover {
           background: $white-color-20;
