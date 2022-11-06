@@ -1,0 +1,138 @@
+Index: css/homepage.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@font-face {\n  font-family: \"Montserrat\";\n  src: local(\"Montserrat Regular\"), local(\"Montserrat-Regular\"), url(\"../fonts/Montserrat-Regular.woff2\") format(\"woff2\"), url(\"../fonts/Montserrat-Regular.woff\") format(\"woff\"), url(\"../fonts/Montserrat-Regular.ttf\") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: swap;\n}\n@font-face {\n  font-family: \"Montserrat\";\n  src: local(\"Montserrat Bold\"), local(\"Montserrat-Bold\"), url(\"../fonts/Montserrat-Bold.woff2\") format(\"woff2\"), url(\"../fonts/Montserrat-Bold.woff\") format(\"woff\"), url(\"../fonts/Montserrat-Bold.ttf\") format(\"truetype\");\n  font-weight: bold;\n  font-style: normal;\n  font-display: swap;\n}\n.nav-link {\n  --bs-nav-link-color: #fff;\n  --bs-navbar-active-color: #F0145A;\n  --bs-navbar-nav-link-padding-x: 0;\n  --bs-navbar-nav-link-padding-y: 0;\n  --bs-nav-link-hover-color: #F0145A;\n}\n\n.bg-gradient {\n  --bs-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);\n}\n\n.list-group {\n  --bs-list-group-color: rgba(255, 255, 255, 0.3);\n  --bs-list-group-bg: transparent;\n  --bs-list-group-border-color: none;\n  --bs-list-group-active-bg: none;\n  --bs-list-group-active-border-color: none;\n  --bs-list-group-border-width: none;\n  --bs-list-group-action-hover-color: #F0145A;\n  --bs-list-group-action-hover-bg: none;\n  --bs-list-group-action-active-color: white;\n  --bs-list-group-action-active-bg: rgba(255, 255, 255, 0.2);\n  --bs-list-group-disabled-color: none;\n  --bs-list-group-disabled-bg: none;\n}\n\n.articles__heading-title, .carousel-team__caption-description, .our-service__description h3, .menu-scroll .list-group .active {\n  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n.footer__wrapper-address-link, .company__title {\n  font-weight: 700;\n  font-size: 14px;\n}\n\n.footer__number, .footer__email, .articles__wrapper-card-wrap-title, .carousel-team__caption-name {\n  font-weight: 700;\n  font-size: 16px;\n}\n\n.menu-scroll .tab-pane > h4, .banner h1 {\n  font-weight: 700;\n  font-size: 30px;\n}\n\n.carousel-team__caption-description {\n  font-weight: 700;\n  font-size: 34px;\n}\n\n.articles__heading-title, .our-service__description h3, .menu-scroll .list-group {\n  font-weight: 700;\n  font-size: 38px;\n}\n\n.articles__heading a, .carousel-team__caption a, .our-service__description a {\n  display: block;\n  text-decoration: none;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 700;\n  color: #0085FF;\n}\n.articles__heading a:hover, .carousel-team__caption a:hover, .our-service__description a:hover, .articles__heading a:focus-visible, .carousel-team__caption a:focus-visible, .our-service__description a:focus-visible {\n  color: #F0145A;\n  transition: 0.5s;\n  transform: scaleX(1.02) translate(15px);\n}\n.articles__heading a svg, .carousel-team__caption a svg, .our-service__description a svg {\n  width: 20px;\n}\n.articles__heading a:hover path, .carousel-team__caption a:hover path, .our-service__description a:hover path, .articles__heading a:hover svg, .carousel-team__caption a:hover svg, .our-service__description a:hover svg, .articles__heading a:focus-visible path, .carousel-team__caption a:focus-visible path, .our-service__description a:focus-visible path, .articles__heading a:focus-visible svg, .carousel-team__caption a:focus-visible svg, .our-service__description a:focus-visible svg {\n  stroke: #F0145A;\n  transition: 0.5s;\n  transform: translate(20%);\n}\n\n.company .row a {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nbody {\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 19px;\n  font-weight: 400;\n}\n\n.bg-gradient {\n  position: relative;\n  border-radius: 0 0 12px 12px;\n}\n.bg-gradient:before, .bg-gradient:after {\n  content: \"\";\n  display: block;\n  border-radius: 0 0 12px 12px;\n  position: absolute;\n  height: 10px;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.bg-gradient:before {\n  bottom: -10px;\n  background-color: #CACADB;\n  width: calc(100% - 20px);\n}\n.bg-gradient:after {\n  bottom: -20px;\n  background-color: #E7E7F2;\n  width: calc(100% - 40px);\n}\n\na {\n  cursor: pointer;\n}\n\n@media (min-width: 1600px) {\n  .container {\n    max-width: 1600px;\n  }\n}\n.header {\n  position: absolute;\n  width: 100%;\n  padding-top: 50px;\n  z-index: 1;\n}\n.header-content-wrapper {\n  position: relative;\n}\n.header__top {\n  font-size: 16px;\n}\n.header__top .container-lg {\n  position: relative;\n}\n.header__top-content {\n  position: absolute;\n  right: 0;\n  top: -16px;\n  z-index: 1;\n}\n.header__top-content > div:not(:last-child):after {\n  content: \"\";\n  display: inline-block;\n  width: 7px;\n  height: 7px;\n  background: white;\n  border-radius: 50%;\n  margin: 0 6px 2px 3px;\n}\n.header__top-lang input[name=lang] {\n  display: none;\n}\n.header__top-lang input[name=lang]:checked + span {\n  background: #F0145A;\n  transition: 1s;\n}\n.header__top-lang input[name=lang]:checked + span:hover {\n  background: rgba(255, 255, 255, 0.2);\n}\n.header__top-lang label span {\n  cursor: pointer;\n  font-weight: 700;\n  color: #fff;\n  padding: 5px 7px;\n  border-radius: 8px;\n  display: inline-block;\n}\n.header__top-lang label span:hover {\n  background: rgba(255, 255, 255, 0.2);\n}\n.header__top-address a, .header__top-phone a {\n  color: #fff;\n  text-decoration: none;\n}\n.header__top-address a:hover, .header__top-phone a:hover {\n  color: #F0145A;\n  transition: 1s;\n}\n.header__top-phone a {\n  font-weight: 700;\n}\n.header__top-social a {\n  text-decoration: none;\n}\n.header__top-social a path {\n  fill: #fff;\n}\n.header__top-social a:hover path {\n  transition: 1s;\n  fill: #F0145A;\n}\n.header .navbar-brand {\n  margin-top: -20px;\n}\n.header .navbar-nav {\n  width: 100%;\n  justify-content: flex-end;\n  gap: 15px;\n  padding-top: 15px;\n}\n.header .navbar .nav-link {\n  font-weight: 700;\n  padding-bottom: 3px;\n}\n.header .navbar .nav-link.active {\n  border-bottom: 2px solid;\n}\n\n@media (min-width: 1024px) {\n  .header__top-content {\n    justify-content: flex-end;\n  }\n}\n@media (max-width: 1024px) and (min-width: 767px) {\n  .header .navbar .container-lg {\n    flex-direction: column;\n    align-items: flex-start;\n  }\n}\n@media (max-width: 1024px) {\n  .header__top-content {\n    position: static;\n  }\n  .header .navbar {\n    padding: 15px 0 0 0;\n  }\n  .header .navbar-brand {\n    margin: 0;\n  }\n  .header .navbar-nav {\n    padding-top: 0;\n  }\n}\n@media (max-width: 767px) {\n  .header {\n    padding-top: 0;\n  }\n  .header__top {\n    background-color: rgba(255, 255, 255, 0.2);\n  }\n  .header__top-content {\n    margin-bottom: 0;\n    justify-content: space-between;\n  }\n  .header__top-content > div:not(:last-child):after {\n    content: unset;\n  }\n  .header__top .container-lg {\n    padding: 10px 15px;\n  }\n  .header__top-address, .header__top-social {\n    display: none;\n  }\n  .header .navbar-toggler {\n    --bs-border-width: 0;\n    padding: 7px;\n  }\n  .header .navbar-toggler:hover {\n    background-color: rgba(255, 255, 255, 0.2);\n    transition: 0.3s;\n  }\n  .header .navbar-toggler:focus {\n    box-shadow: none;\n  }\n  .header .navbar-toggler svg {\n    fill: #fff;\n  }\n  .header .navbar-collapse {\n    background-color: #fff;\n    padding: 12px;\n    border-radius: 12px;\n    margin-top: 20px;\n  }\n  .header .navbar-collapse .nav-link {\n    border-radius: 12px;\n    padding: 7px 0;\n    text-align: center;\n    background-color: #F5F5FA;\n    color: #24A3FF;\n    font-size: 24px;\n  }\n  .header .navbar-collapse .nav-link.active {\n    border: none;\n    color: #F0145A;\n  }\n  .header .navbar-collapse .nav-link:active, .header .navbar-collapse .nav-link:hover, .header .navbar-collapse .nav-link:focus {\n    background-color: #E6E6F0;\n    transition: 0.3s;\n  }\n}\n\n.banner {\n  height: 100vh;\n  display: flex;\n  align-items: center;\n  text-align: center;\n  background-image: url(\"../assets/img/h.svg\");\n  background-repeat: no-repeat;\n  background-size: contain;\n  background-position: center center;\n  position: relative;\n}\n.banner h1 {\n  color: #fff;\n}\n.banner__scroll {\n  position: absolute;\n  bottom: 30px;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 0;\n}\n\n.menu-scroll {\n  padding: 60px 0 30px;\n}\n.menu-scroll .list-group .list-group-item {\n  padding: 5px 10px;\n}\n.menu-scroll .vr {\n  width: 4px;\n  height: 100%;\n  opacity: 1;\n  background-color: rgba(255, 255, 255, 0.3);\n}\n.menu-scroll .tab-pane {\n  color: white;\n}\n.menu-scroll .tab-pane > h4 {\n  margin: 6% 0 30px;\n}\n.menu-scroll .tab-pane p {\n  font-size: 19px;\n}\n\n@media (max-width: 1399px) {\n  .menu-scroll .container {\n    max-width: 1200px;\n  }\n  .menu-scroll .list-group {\n    font-size: 34px;\n  }\n}\n@media (max-width: 1199px) {\n  .menu-scroll .container {\n    max-width: 992px;\n  }\n  .menu-scroll .list-group {\n    font-size: 30px;\n  }\n}\n@media (max-width: 767px) {\n  .menu-scroll .container {\n    max-width: 576px;\n  }\n  .menu-scroll .list-group {\n    display: flex;\n    flex-direction: row;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    overflow: scroll;\n  }\n  .menu-scroll .vr {\n    opacity: 0;\n  }\n  .menu-scroll hr {\n    opacity: 1;\n    border: 2px solid;\n    width: 100%;\n    color: rgba(255, 255, 255, 0.3);\n  }\n}\n@media (max-width: 576px) {\n  .menu-scroll .container {\n    max-width: 320px;\n  }\n  .menu-scroll .list-group {\n    font-size: 24px;\n  }\n  .menu-scroll .tab-pane > h4 {\n    font-size: 20px;\n  }\n}\n\n.our-service {\n  padding: 30px 0 60px;\n}\n.our-service__description {\n  padding-bottom: 22px;\n}\n.our-service__description a {\n  padding-bottom: 10px;\n}\n.our-service__info-columns {\n  gap: 60px;\n}\n.our-service__info-columns img {\n  margin-bottom: 30px;\n}\n.our-service__info-columns h3 {\n  color: #24A3FF;\n  font-size: 22px;\n  font-weight: 700;\n}\n.our-service__info-columns p {\n  font-size: 16px;\n  color: #fff;\n  margin-bottom: 0;\n}\n\n@media (min-width: 1600px) {\n  .our-service .container {\n    max-width: 1600px;\n  }\n  .our-service__info-columns {\n    justify-content: space-between;\n  }\n}\n@media (max-width: 767px) {\n  .our-service .container {\n    max-width: 576px;\n  }\n  .our-service__info-columns {\n    row-gap: 30px;\n  }\n}\n@media (max-width: 576px) {\n  .our-service .container {\n    max-width: 320px;\n  }\n  .our-service__description h3 {\n    font-size: 30px;\n  }\n}\n\n.carousel-team {\n  padding-top: 60px;\n}\n.carousel-team .carousel-indicators {\n  bottom: -80px;\n  z-index: 1;\n}\n.carousel-team .carousel-indicators [data-bs-target] {\n  width: 16px;\n  height: 16px;\n  border-radius: 50%;\n  background-color: #24A3FF;\n}\n.carousel-team .carousel-inner {\n  background-color: #F5F5FA;\n  border-radius: 12px;\n}\n.carousel-team__wrapper .photo-team {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.carousel-team__caption {\n  z-index: 1;\n  padding: 30px;\n}\n.carousel-team__caption a {\n  padding-bottom: 5px;\n}\n.carousel-team__caption-description {\n  margin-bottom: 30px;\n}\n.carousel-team__caption-name {\n  color: #B3B3BA;\n}\n.carousel-team__caption-post {\n  color: #B3B3BA;\n  font-size: 14px;\n}\n.carousel-team .carousel-item {\n  opacity: 0;\n  display: flex;\n}\n.carousel-team .carousel-item.active {\n  transition: 0.5s;\n  opacity: 1;\n}\n\n@media (max-width: 767px) {\n  .carousel-team .container {\n    max-width: 576px;\n  }\n  .carousel-team .carousel-indicators {\n    bottom: -50px;\n  }\n  .carousel-team__caption-description {\n    font-size: 24px;\n    margin-bottom: 20px;\n  }\n  .carousel-team__caption-name {\n    margin-bottom: 10px;\n  }\n  .carousel-team__caption-post {\n    margin-bottom: 0;\n  }\n  .carousel-team__wrapper .photo-team {\n    width: 105%;\n  }\n}\n@media (max-width: 576px) {\n  .carousel-team .container {\n    max-width: 320px;\n  }\n  .carousel-team__wrapper .photo-team {\n    width: 110%;\n  }\n}\n\n.company {\n  padding-top: 105px;\n}\n.company__title {\n  text-transform: uppercase;\n  color: #323264;\n  line-height: 17px;\n  letter-spacing: 1px;\n  text-align: center;\n  margin-bottom: 30px;\n}\n.company .row a:hover {\n  border: 1px solid #000;\n  border-radius: 10px;\n  animation: shake-logo 0.3s linear;\n}\n@keyframes shake-logo {\n  0% {\n    transform: translate(0);\n  }\n  20% {\n    transform: translate(-2px, 2px);\n  }\n  40% {\n    transform: translate(-2px, -2px);\n  }\n  60% {\n    transform: translate(2px, 2px);\n  }\n  80% {\n    transform: translate(2px, -2px);\n  }\n  100% {\n    transform: translate(0);\n  }\n}\n.company__logo-first {\n  background-color: #1C4280;\n}\n.company__logo-second {\n  padding: 44px 12px;\n  background-color: #143646;\n}\n.company__logo-third {\n  background-color: #F48B30;\n}\n.company__logo-third, .company__logo-fifth {\n  padding: 38px 12px;\n}\n.company__logo-fourth {\n  background-color: #9E4DC3;\n}\n.company__logo-fourth, .company__logo-tenth {\n  padding: 39px 12px;\n}\n.company__logo-fifth {\n  background-color: #FD9339;\n}\n.company__logo-first, .company__logo-sixth {\n  padding: 36px 12px;\n}\n.company__logo-sixth {\n  background-color: #E2E2E4;\n}\n.company__logo-seventh {\n  padding: 29px 12px;\n  background-color: #C71C36;\n}\n.company__logo-eight {\n  padding: 22px 12px;\n  background-color: #DCF3F9;\n}\n.company__logo-nineth {\n  padding: 29px 12px;\n  background-color: #EAEAEA;\n}\n.company__logo-tenth {\n  background-color: #282240;\n}\n.company__logo-eleventh {\n  padding: 37px 12px;\n  background-color: #1D4568;\n}\n.company__logo-twelfth {\n  padding: 12px 12px;\n  background-color: #000;\n}\n\n@media (max-width: 2800px) and (min-width: 1405px) {\n  .company .container {\n    max-width: 1400px;\n  }\n}\n@media (min-width: 1450px) {\n  .company .row {\n    border-radius: 12px;\n    overflow: hidden;\n  }\n}\n@media (max-width: 1440px) {\n  .company .container {\n    min-width: 100%;\n  }\n}\n\n.articles {\n  padding-top: 30px;\n  background-color: #F5F5FA;\n}\n.articles__heading-link {\n  margin-bottom: 10px;\n}\n.articles__heading-title {\n  margin-bottom: 30px;\n}\n.articles__wrapper {\n  gap: 30px;\n}\n.articles__wrapper-card {\n  background: #fff;\n  border-radius: 8px;\n  overflow: hidden;\n  width: 33.3333333333%;\n}\n.articles__wrapper-card img {\n  height: 200px;\n  width: 100%;\n}\n.articles__wrapper-card-wrap {\n  margin: 30px;\n}\n.articles__wrapper-card-wrap-title {\n  color: #24A3FF;\n}\n.articles__wrapper-card-wrap-data {\n  font-weight: 700;\n  font-size: 12px;\n  color: #B3B3BA;\n  letter-spacing: 1px;\n}\n.articles__wrapper-card-wrap-line {\n  margin: 15px 0;\n  border: 2px solid;\n  color: #E6E6F0;\n  opacity: 1;\n}\n.articles__wrapper-card-wrap-text {\n  font-size: 14px;\n}\n\n@media (max-width: 767px) and (min-width: 576px) {\n  .articles .container {\n    max-width: 576px;\n  }\n  .articles__wrapper {\n    flex-wrap: wrap;\n  }\n  .articles__wrapper-card {\n    width: calc(50% - 15px);\n  }\n  .articles__wrapper-card:last-child {\n    width: 100%;\n  }\n  .articles__wrapper-card:last-child img {\n    object-fit: cover;\n  }\n}\n@media (max-width: 576px) {\n  .articles .container {\n    max-width: 320px;\n  }\n  .articles__heading-title {\n    font-size: 30px;\n  }\n  .articles__wrapper {\n    flex-wrap: wrap;\n  }\n  .articles__wrapper-card {\n    width: 100%;\n  }\n}\n\n.footer {\n  padding: 30px 0;\n  background-color: #F5F5FA;\n}\n.footer__line {\n  margin: 0 auto 30px;\n  width: 100%;\n  height: 2px;\n  background-color: #E6E6F0;\n}\n.footer__wrapper {\n  flex-wrap: wrap;\n}\n.footer__wrapper-address {\n  gap: 26px;\n  width: 50%;\n}\n.footer__wrapper-address-text {\n  position: relative;\n  margin: 0;\n  color: #323264;\n}\n.footer__wrapper-address-text:after {\n  position: absolute;\n  content: \"\";\n  display: inline-block;\n  text-align: center;\n  top: 45%;\n  right: -7%;\n  width: 6px;\n  height: 6px;\n  border-radius: 50%;\n  background-color: #B3B3BA;\n}\n.footer__wrapper-address-link {\n  text-decoration: none;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  color: #0085FF;\n}\n.footer__wrapper-address-link:hover {\n  color: #F0145A;\n}\n.footer__wrapper-copy {\n  width: 50%;\n  font-size: 16px;\n  color: #B3B3BA;\n}\n.footer__wrapper-contact > div:not(:last-child):after {\n  content: \"\";\n  display: inline-block;\n  width: 7px;\n  height: 7px;\n  background: white;\n  border-radius: 50%;\n  margin: 0 6px 2px 3px;\n}\n.footer__wrapper-contact a {\n  text-decoration: none;\n}\n.footer__wrapper-contact a path {\n  fill: #fff;\n}\n.footer__wrapper-contact a:hover path {\n  transition: 1s;\n  fill: #F0145A;\n}\n.footer__number {\n  color: #323264;\n}\n.footer__email {\n  color: #24A3FF;\n}\n.footer__email:hover {\n  color: #F0145A;\n}\n\n/*# sourceMappingURL=homepage.css.map */\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/homepage.css b/css/homepage.css
+--- a/css/homepage.css	(revision ae343458e0c6b3d21973122e5f99de37f6a6ee01)
++++ b/css/homepage.css	(date 1667694955229)
+@@ -45,12 +45,12 @@
+   -webkit-text-fill-color: transparent;
+ }
+ 
+-.footer__wrapper-address-link, .company__title {
++.company__title {
+   font-weight: 700;
+   font-size: 14px;
+ }
+ 
+-.footer__number, .footer__email, .articles__wrapper-card-wrap-title, .carousel-team__caption-name {
++.articles__wrapper-card-wrap-title, .carousel-team__caption-name {
+   font-weight: 700;
+   font-size: 16px;
+ }
+@@ -640,6 +640,11 @@
+     min-width: 100%;
+   }
+ }
++@media (max-width: 991px) and (min-width: 576px) {
++  .company img {
++    width: 100%;
++  }
++}
+ 
+ .articles {
+   padding-top: 30px;
+@@ -699,17 +704,11 @@
+   .articles__wrapper-card:last-child {
+     width: 100%;
+   }
+-  .articles__wrapper-card:last-child img {
+-    object-fit: cover;
+-  }
+ }
+ @media (max-width: 576px) {
+   .articles .container {
+     max-width: 320px;
+   }
+-  .articles__heading-title {
+-    font-size: 30px;
+-  }
+   .articles__wrapper {
+     flex-wrap: wrap;
+   }
+@@ -717,82 +716,5 @@
+     width: 100%;
+   }
+ }
+-
+-.footer {
+-  padding: 30px 0;
+-  background-color: #F5F5FA;
+-}
+-.footer__line {
+-  margin: 0 auto 30px;
+-  width: 100%;
+-  height: 2px;
+-  background-color: #E6E6F0;
+-}
+-.footer__wrapper {
+-  flex-wrap: wrap;
+-}
+-.footer__wrapper-address {
+-  gap: 26px;
+-  width: 50%;
+-}
+-.footer__wrapper-address-text {
+-  position: relative;
+-  margin: 0;
+-  color: #323264;
+-}
+-.footer__wrapper-address-text:after {
+-  position: absolute;
+-  content: "";
+-  display: inline-block;
+-  text-align: center;
+-  top: 45%;
+-  right: -7%;
+-  width: 6px;
+-  height: 6px;
+-  border-radius: 50%;
+-  background-color: #B3B3BA;
+-}
+-.footer__wrapper-address-link {
+-  text-decoration: none;
+-  letter-spacing: 1px;
+-  text-transform: uppercase;
+-  color: #0085FF;
+-}
+-.footer__wrapper-address-link:hover {
+-  color: #F0145A;
+-}
+-.footer__wrapper-copy {
+-  width: 50%;
+-  font-size: 16px;
+-  color: #B3B3BA;
+-}
+-.footer__wrapper-contact > div:not(:last-child):after {
+-  content: "";
+-  display: inline-block;
+-  width: 7px;
+-  height: 7px;
+-  background: white;
+-  border-radius: 50%;
+-  margin: 0 6px 2px 3px;
+-}
+-.footer__wrapper-contact a {
+-  text-decoration: none;
+-}
+-.footer__wrapper-contact a path {
+-  fill: #fff;
+-}
+-.footer__wrapper-contact a:hover path {
+-  transition: 1s;
+-  fill: #F0145A;
+-}
+-.footer__number {
+-  color: #323264;
+-}
+-.footer__email {
+-  color: #24A3FF;
+-}
+-.footer__email:hover {
+-  color: #F0145A;
+-}
+ 
+ /*# sourceMappingURL=homepage.css.map */
