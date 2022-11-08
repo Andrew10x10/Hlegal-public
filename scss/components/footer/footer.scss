@@ -1,6 +1,7 @@
 .footer {
   padding: 30px 0;
   background-color: $grey-bg;
+
   &__line {
     margin: 0 auto 30px;
     width: 100%;
@@ -15,7 +16,8 @@
     &-address {
       gap: 26px;
       width: 50%;
-      &-text {
+
+      &-text  {
         position: relative;
         margin: 0;
         color: $main-color;
@@ -25,7 +27,6 @@
           content: '';
           display: inline-block;
           text-align: center;
-
           top: 45%;
           right: -7%;
           width: 6px;
@@ -34,33 +35,40 @@
           background-color: $grey-bg-text;
         }
       }
+
       &-link {
         text-decoration: none;
         letter-spacing: 1px;
         text-transform: uppercase;
         @extend %font-s ;
-        color: $active-hover-color;
+        color: $active-regular;
 
         &:hover {
           color: $accent-color;
         }
       }
     }
-    &-copy{
+    &-copy {
       width: 50%;
       font-size: $font-sm;
       color: $grey-bg-text;
+      justify-content: end;
     }
-    &-contact{
+    &-contact {
+      align-items: center;
+      gap: 26px;
+      position: relative;
       & > div:not(:last-child) {
         &:after {
+          position: absolute;
           content: '';
           display: inline-block;
           width: 7px;
           height: 7px;
-          background: white;
+          background: $grey-bg-text;
           border-radius: $border-radius-50;
-          margin: 0 6px 2px 3px;
+          top: 18px;
+          margin: 0 10px;
         }
       }
 
@@ -81,8 +89,31 @@
     }
 
   }
-  &__social{}
-  &__number{}
-  &__email{}
+  &__social {
+    svg {
+      path {
+        fill: #24A3FF;
+      }
+    }
+  }
+  &__number {
+    a {
+      color: $main-color;
+    }
+  }
+  &__number, &__email {
+    a {
+      @extend %font-sm;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+  &__email {
+    a{
+      color: $active-regular;
+    }
+  }
 
 }
