@@ -1,5 +1,4 @@
 .our-service {
-
   @media (min-width: 1600px) {
     .container {
       max-width: 1600px;
@@ -9,20 +8,14 @@
     }
   }
 
-  @media (max-width: 767px) {
-    .container {
-      max-width: 576px;
-    }
-    &__info-columns {
-      row-gap: 30px;
-    }
-  }
-
   @media (max-width: 576px) {
-    .container {
-      max-width: 320px;
-    }
+
+    padding: 0 15px;
+   &__wrap{
+     padding: 30px 15px;
+   }
     &__description {
+      padding: 0;
       h3 {
         font-size: $font-xl;
       }

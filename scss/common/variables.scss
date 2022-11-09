@@ -52,8 +52,13 @@ $red-text-gradient: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   --bs-gradient: #{$main-gradient};
 }
 
+
+//@media (max-width: 450px) {
+//  font-size: $font-xl;
+//}
+
 .list-group {
-  --bs-list-group-color: #{$white-color-30};
+  --bs-list-group-color: #{$grey-bg-text};
   --bs-list-group-bg: transparent;
   --bs-list-group-border-color: none;
   --bs-list-group-active-bg: none;

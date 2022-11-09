@@ -5,6 +5,7 @@
     padding-bottom: 22px;
 
     @extend %section-link;
+
     a {
       padding-bottom: 10px;
     }
@@ -15,18 +16,22 @@
     }
   }
 
+  &__wrap {
+    padding: 30px;
+  }
+
   &__info-columns {
-    gap: 60px;
 
     img {
       margin-bottom: 30px;
     }
 
-    h3 {
-      color: $active-regular;
+    a {
+      @extend %section-link-hover;
+      margin-bottom: 15px;
       font-size: $font-most-md;
-      font-weight: $font-bold;
     }
+
 
     p {
       font-size: 16px;

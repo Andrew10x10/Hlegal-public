@@ -25,7 +25,7 @@
 }
 
 .list-group {
-  --bs-list-group-color: rgba(255, 255, 255, 0.3);
+  --bs-list-group-color: #B3B3BA;
   --bs-list-group-bg: transparent;
   --bs-list-group-border-color: none;
   --bs-list-group-active-bg: none;
@@ -39,7 +39,7 @@
   --bs-list-group-disabled-bg: none;
 }
 
-.articles__heading-title, .carousel-team__caption-description, .our-service__description h3, .menu-scroll .list-group .active {
+.articles__heading-title, .carousel-team__inner-info-description, .our-service__description h3, .menu-scroll .list-group .active {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,7 +50,7 @@
   font-size: 14px;
 }
 
-.footer__number a, .footer__email a, .articles__wrapper-card-wrap-title, .carousel-team__caption-name {
+.footer__number a, .footer__email a, .articles__wrapper-card-wrap-title, .carousel-team__inner-info-name {
   font-weight: 700;
   font-size: 16px;
 }
@@ -60,34 +60,38 @@
   font-size: 30px;
 }
 
-.carousel-team__caption-description {
-  font-weight: 700;
-  font-size: 34px;
-}
-
-.articles__heading-title, .our-service__description h3, .menu-scroll .list-group {
+.articles__heading-title, .carousel-team__inner-info-description, .our-service__description h3, .menu-scroll .list-group {
   font-weight: 700;
   font-size: 38px;
 }
 
-.articles__heading a, .carousel-team__caption a, .our-service__description a {
+.our-service__info-columns a {
   display: block;
-  text-decoration: none;
+  font-weight: 700;
+  color: #24A3FF;
+}
+.our-service__info-columns a:hover {
+  color: #F0145A;
+  transition: 0.5s;
+}
+
+.articles__heading a, .carousel-team__inner-info a, .our-service__description a {
+  display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   color: #0085FF;
 }
-.articles__heading a:hover, .carousel-team__caption a:hover, .our-service__description a:hover, .articles__heading a:focus-visible, .carousel-team__caption a:focus-visible, .our-service__description a:focus-visible {
+.articles__heading a:hover, .carousel-team__inner-info a:hover, .our-service__description a:hover, .articles__heading a:focus-visible, .carousel-team__inner-info a:focus-visible, .our-service__description a:focus-visible {
   color: #F0145A;
   transition: 0.5s;
   transform: scaleX(1.02) translate(15px);
 }
-.articles__heading a svg, .carousel-team__caption a svg, .our-service__description a svg {
+.articles__heading a svg, .carousel-team__inner-info a svg, .our-service__description a svg {
   width: 20px;
 }
-.articles__heading a:hover path, .carousel-team__caption a:hover path, .our-service__description a:hover path, .articles__heading a:hover svg, .carousel-team__caption a:hover svg, .our-service__description a:hover svg, .articles__heading a:focus-visible path, .carousel-team__caption a:focus-visible path, .our-service__description a:focus-visible path, .articles__heading a:focus-visible svg, .carousel-team__caption a:focus-visible svg, .our-service__description a:focus-visible svg {
+.articles__heading a:hover path, .carousel-team__inner-info a:hover path, .our-service__description a:hover path, .articles__heading a:hover svg, .carousel-team__inner-info a:hover svg, .our-service__description a:hover svg, .articles__heading a:focus-visible path, .carousel-team__inner-info a:focus-visible path, .our-service__description a:focus-visible path, .articles__heading a:focus-visible svg, .carousel-team__inner-info a:focus-visible svg, .our-service__description a:focus-visible svg {
   stroke: #F0145A;
   transition: 0.5s;
   transform: translate(20%);
@@ -135,6 +139,7 @@ body {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media (min-width: 1600px) {
@@ -339,8 +344,11 @@ a {
 .menu-scroll {
   padding: 60px 0 30px;
 }
+.menu-scroll__left {
+  text-align: end;
+}
 .menu-scroll .list-group .list-group-item {
-  padding: 5px 10px;
+  padding: 10px 0;
 }
 .menu-scroll .vr {
   width: 4px;
@@ -352,38 +360,27 @@ a {
   color: white;
 }
 .menu-scroll .tab-pane > h4 {
-  margin: 6% 0 30px;
+  margin: 30px 0;
 }
 .menu-scroll .tab-pane p {
   font-size: 19px;
 }
 
-@media (max-width: 1399px) {
-  .menu-scroll .container {
-    max-width: 1200px;
-  }
-  .menu-scroll .list-group {
-    font-size: 34px;
-  }
-}
 @media (max-width: 1199px) {
-  .menu-scroll .container {
-    max-width: 992px;
-  }
   .menu-scroll .list-group {
-    font-size: 30px;
+    white-space: nowrap;
   }
 }
-@media (max-width: 767px) {
-  .menu-scroll .container {
-    max-width: 576px;
-  }
+@media (max-width: 991px) {
   .menu-scroll .list-group {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: scroll;
+  }
+  .menu-scroll .list-group .list-group-item {
+    padding: 10px;
   }
   .menu-scroll .vr {
     opacity: 0;
@@ -395,12 +392,17 @@ a {
     color: rgba(255, 255, 255, 0.3);
   }
 }
+@media (max-width: 767px) {
+  .menu-scroll .container-sm {
+    padding: 0 30px;
+  }
+}
 @media (max-width: 576px) {
-  .menu-scroll .container {
-    max-width: 320px;
+  .menu-scroll {
+    padding: 30px 0 30px;
   }
   .menu-scroll .list-group {
-    font-size: 24px;
+    font-size: 30px;
   }
   .menu-scroll .tab-pane > h4 {
     font-size: 20px;
@@ -416,16 +418,15 @@ a {
 .our-service__description a {
   padding-bottom: 10px;
 }
-.our-service__info-columns {
-  gap: 60px;
+.our-service__wrap {
+  padding: 30px;
 }
 .our-service__info-columns img {
   margin-bottom: 30px;
 }
-.our-service__info-columns h3 {
-  color: #24A3FF;
+.our-service__info-columns a {
+  margin-bottom: 15px;
   font-size: 22px;
-  font-weight: 700;
 }
 .our-service__info-columns p {
   font-size: 16px;
@@ -441,17 +442,15 @@ a {
     justify-content: space-between;
   }
 }
-@media (max-width: 767px) {
-  .our-service .container {
-    max-width: 576px;
-  }
-  .our-service__info-columns {
-    row-gap: 30px;
-  }
-}
 @media (max-width: 576px) {
-  .our-service .container {
-    max-width: 320px;
+  .our-service {
+    padding: 0 15px;
+  }
+  .our-service__wrap {
+    padding: 30px 15px;
+  }
+  .our-service__description {
+    padding: 0;
   }
   .our-service__description h3 {
     font-size: 30px;
@@ -459,43 +458,31 @@ a {
 }
 
 .carousel-team {
-  padding-top: 60px;
-}
-.carousel-team .carousel-indicators {
-  bottom: -80px;
-  z-index: 1;
-}
-.carousel-team .carousel-indicators [data-bs-target] {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #24A3FF;
+  padding: 60px 0;
 }
 .carousel-team .carousel-inner {
-  background-color: #F5F5FA;
   border-radius: 12px;
 }
-.carousel-team__wrapper .photo-team {
+.carousel-team__photo {
+  width: 400px;
+  overflow: hidden;
+}
+.carousel-team .photo-team {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
 }
-.carousel-team__caption {
-  z-index: 1;
-  padding: 30px;
+.carousel-team .photo-team-1 {
+  background-image: url("/assets/img/team/Alexander.png");
 }
-.carousel-team__caption a {
-  padding-bottom: 5px;
+.carousel-team .photo-team-2 {
+  background-image: url("/assets/img/team/Evgeny.png");
 }
-.carousel-team__caption-description {
-  margin-bottom: 30px;
-}
-.carousel-team__caption-name {
-  color: #B3B3BA;
-}
-.carousel-team__caption-post {
-  color: #B3B3BA;
-  font-size: 14px;
+.carousel-team .photo-team-3 {
+  background-image: url("/assets/img/team/Julia.png");
 }
 .carousel-team .carousel-item {
   opacity: 0;
@@ -505,39 +492,66 @@ a {
   transition: 0.5s;
   opacity: 1;
 }
+.carousel-team .carousel-indicators {
+  bottom: -70px;
+  z-index: 1;
+}
+.carousel-team .carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #24A3FF;
+}
+.carousel-team__inner-info {
+  background-color: #F5F5FA;
+  z-index: 1;
+  padding: 30px;
+}
+.carousel-team__inner-info a {
+  padding-bottom: 5px;
+}
+.carousel-team__inner-info-description {
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+.carousel-team__inner-info-name {
+  color: #B3B3BA;
+}
+.carousel-team__inner-info-post {
+  color: #B3B3BA;
+  font-size: 14px;
+}
 
+@media (min-width: 1600px) {
+  .carousel-team .container-lg {
+    max-width: 1600px;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-team .carousel-item {
+    flex-direction: column;
+  }
+  .carousel-team .carousel-team__photo {
+    width: 100%;
+  }
+  .carousel-team .photo-team {
+    height: 500px;
+  }
+}
 @media (max-width: 767px) {
-  .carousel-team .container {
-    max-width: 576px;
-  }
-  .carousel-team .carousel-indicators {
-    bottom: -50px;
-  }
-  .carousel-team__caption-description {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  .carousel-team__caption-name {
-    margin-bottom: 10px;
-  }
-  .carousel-team__caption-post {
-    margin-bottom: 0;
-  }
-  .carousel-team__wrapper .photo-team {
-    width: 105%;
+  .carousel-team .container-lg {
+    --bs-gutter-x: 3.75rem;
   }
 }
 @media (max-width: 576px) {
-  .carousel-team .container {
-    max-width: 320px;
-  }
-  .carousel-team__wrapper .photo-team {
-    width: 110%;
+  .carousel-team__inner-info-description {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
 .company {
-  padding-top: 105px;
+  padding: 45px 0 60px;
 }
 .company__title {
   text-transform: uppercase;
@@ -626,7 +640,7 @@ a {
 
 @media (max-width: 2800px) and (min-width: 1405px) {
   .company .container {
-    max-width: 1400px;
+    max-width: 1720px;
   }
 }
 @media (min-width: 1450px) {
@@ -782,9 +796,6 @@ a {
   border-radius: 50%;
   top: 18px;
   margin: 0 10px;
-}
-.footer__wrapper-contact a {
-  text-decoration: none;
 }
 .footer__wrapper-contact a path {
   fill: #fff;

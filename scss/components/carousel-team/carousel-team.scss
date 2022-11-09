@@ -1,8 +1,44 @@
 .carousel-team {
-  padding-top: 60px;
+  padding: 60px 0;
+
+  .carousel-inner {
+    border-radius: 12px;
+  }
+
+  &__photo{
+    width: 400px;
+    overflow: hidden;
+  }
+  .photo-team {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  .photo-team-1{
+    background-image: url("/assets/img/team/Alexander.png");
+  }
+  .photo-team-2{
+    background-image: url("/assets/img/team/Evgeny.png");
+  }
+  .photo-team-3{
+    background-image: url("/assets/img/team/Julia.png");
+  }
+
+  .carousel-item {
+    opacity: 0;
+    display: flex;
+
+    &.active {
+      transition: .5s;
+      opacity: 1;
+    }
+  }
 
   .carousel-indicators{
-   bottom: -80px;
+   bottom: -70px;
     z-index: 1;
 
     & [data-bs-target]{
@@ -12,31 +48,18 @@
       background-color: $active-regular;
     }
   }
-  .carousel-inner {
-    background-color: #F5F5FA;
-    border-radius: 12px;
-  }
-  &__wrapper{
 
-    .photo-team{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__caption {
-
+  &__inner-info {
+    background-color: $grey-bg;
     z-index: 1;
     padding: 30px;
     @extend %section-link;
-
     a {
       padding-bottom: 5px;
     }
-
     &-description {
-      @extend %font-xxl;
+      line-height: 46px;
+      @extend %font-big;
       @extend %red-gradient;
       margin-bottom: 30px;
     }
@@ -51,17 +74,4 @@
       font-size: $font-s;
     }
   }
-
-
-  .carousel-item {
-    opacity: 0;
-    display: flex;
-
-    &.active {
-      transition: .5s;
-      opacity: 1;
-    }
-  }
-
-
 }
