@@ -84,6 +84,7 @@
         &:active, &:hover, &:focus{
           background-color: $grey-bg-separator;
           transition: .3s;
+          color: $accent-color;
         }
       }
     }

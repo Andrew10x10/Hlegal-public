@@ -115,6 +115,10 @@
       font-weight: $font-bold;
       padding-bottom: 3px;
 
+      &:hover , &:active{
+        border-bottom: 2px solid;
+        transition: .5s;
+      }
       &.active {
         border-bottom: 2px solid;
       }

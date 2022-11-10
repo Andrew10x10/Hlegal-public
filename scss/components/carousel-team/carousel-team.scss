@@ -10,21 +10,17 @@
     overflow: hidden;
   }
   .photo-team {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    @extend %picture;
     position: relative;
   }
   .photo-team-1{
-    background-image: url("/assets/img/team/Alexander.png");
+    background-image: url("../assets/img/team/Alexander.png");
   }
   .photo-team-2{
-    background-image: url("/assets/img/team/Evgeny.png");
+    background-image: url("../assets/img/team/Evgeny.png");
   }
   .photo-team-3{
-    background-image: url("/assets/img/team/Julia.png");
+    background-image: url("../assets/img/team/Julia.png");
   }
 
   .carousel-item {
@@ -52,7 +48,7 @@
   &__inner-info {
     background-color: $grey-bg;
     z-index: 1;
-    padding: 30px;
+    padding: $p-30;
     @extend %section-link;
     a {
       padding-bottom: 5px;

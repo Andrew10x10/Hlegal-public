@@ -1,5 +1,5 @@
 .articles {
-  padding-top: 30px;
+  padding-top: $p-30;
   background-color: $grey-bg;
 
   &__heading {
@@ -17,21 +17,16 @@
   }
 
   &__wrapper {
-    gap: 30px;
+    gap: $g-30;
 
     &-card {
+      flex: 1 1 30%;
       background: $white-color;
       border-radius: 8px;
       overflow: hidden;
-      width: calc(100% / 3);
-
-      img {
-        height: 200px;
-        width: 100%;
-      }
 
       &-wrap {
-        margin: 30px;
+        padding: $p-30;
 
         &-title {
           @extend %font-sm;
@@ -55,8 +50,31 @@
         &-text {
           font-size: $font-s;
         }
+      }
 
+      &-photo {
+        height: 200px;
+        overflow: hidden;
       }
     }
   }
+
+  .image {
+    @extend %picture;
+
+  }
+
+  .image-publication-1 {
+    background-image: url("../assets/img/publication/Publication-1.png");
+  }
+
+  .image-publication-2 {
+    background-image: url("../assets/img/publication/Publication-2.png");
+  }
+
+  .image-publication-3 {
+    background-image: url("../assets/img/publication/Publication-3.png");
+  }
+
 }
+

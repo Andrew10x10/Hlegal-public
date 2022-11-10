@@ -1,28 +1,17 @@
 .articles {
-  @media (max-width: 767px) and (min-width: 576px) {
-    .container {
-      max-width: 576px;
+  @media (min-width: 1600px) {
+    .container-lg {
+      max-width: 1600px;
     }
+  }
+
+
+  @media (max-width: 992px) and (min-width: 576px) {
     &__wrapper {
-      flex-wrap: wrap;
-
-      &-card {
-        width: calc(100% / 2 - 15px);
-
-        &:last-child {
-          width: 100%;
-
-          img {
-            object-fit: cover;
-          }
-        }
-      }
+          flex-wrap: wrap;
     }
   }
   @media (max-width: 576px) {
-    .container {
-      max-width: 320px;
-    }
     &__heading{
       &-title{
         font-size: $font-xl;
@@ -30,9 +19,8 @@
     }
     &__wrapper {
       flex-wrap: wrap;
-
       &-card {
-        width: 100%;
+        flex: 1 1 100%
       }
     }
   }

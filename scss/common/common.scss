@@ -38,6 +38,9 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+.container-lg{
+  --bs-gutter-x: 60px;
+}
 
 
 @media (min-width: 1600px) {
