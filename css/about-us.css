@@ -185,7 +185,7 @@ a {
   display: inline-block;
   width: 7px;
   height: 7px;
-  background: white;
+  background: #E6E6F0;
   border-radius: 50%;
   margin: 0 6px 2px 3px;
 }
@@ -195,6 +195,7 @@ a {
 .header__top-lang input[name=lang]:checked + span {
   background: #F0145A;
   transition: 1s;
+  color: #fff;
 }
 .header__top-lang input[name=lang]:checked + span:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -202,7 +203,7 @@ a {
 .header__top-lang label span {
   cursor: pointer;
   font-weight: 700;
-  color: #fff;
+  color: #B3B3BA;
   padding: 5px 7px;
   border-radius: 8px;
   display: inline-block;
@@ -211,7 +212,7 @@ a {
   background: rgba(255, 255, 255, 0.2);
 }
 .header__top-address a, .header__top-phone a {
-  color: #fff;
+  color: #B3B3BA;
   text-decoration: none;
 }
 .header__top-address a:hover, .header__top-phone a:hover {
@@ -225,7 +226,7 @@ a {
   text-decoration: none;
 }
 .header__top-social a path {
-  fill: #fff;
+  fill: #B3B3BA;
 }
 .header__top-social a:hover path {
   transition: 1s;
@@ -234,6 +235,22 @@ a {
 .header .navbar-brand {
   margin-top: -20px;
 }
+.header .navbar-brand:hover .navbar-brand-way {
+  color: #F0145A;
+  transition: 0.8s;
+  box-shadow: 0 0 65px -20px black;
+}
+.header .navbar-brand .slash-nav {
+  margin-bottom: 14px;
+}
+.header .navbar-brand-way {
+  font-size: 36px;
+  line-height: 44px;
+  color: #323264;
+}
+.header .navbar-brand-way:hover, .header .navbar-brand-way .navbar-brand {
+  color: #F0145A;
+}
 .header .navbar-nav {
   width: 100%;
   justify-content: flex-end;
@@ -241,6 +258,7 @@ a {
   padding-top: 15px;
 }
 .header .navbar .nav-link {
+  color: #24A3FF;
   font-weight: 700;
   padding-bottom: 3px;
 }
@@ -333,6 +351,13 @@ a {
     background-color: #E6E6F0;
     transition: 0.3s;
     color: #F0145A;
+  }
+}
+@media (max-width: 567px) {
+  .header .navbar-brand-way {
+    font-size: 19px;
+    line-height: 24px;
+    color: #323264;
   }
 }
 
@@ -863,4 +888,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=homepage.css.map */
+/*# sourceMappingURL=about-us.css.map */
