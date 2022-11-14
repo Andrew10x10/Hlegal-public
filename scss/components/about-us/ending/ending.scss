@@ -1,0 +1,11 @@
+.ending{
+  &__wrapper{
+    gap: 60px;
+  }
+  &__text{
+    flex: 1 1 100%;
+  }
+  &__title{
+    flex: 1 1 75%;
+  }
+}
