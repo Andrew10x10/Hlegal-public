@@ -504,6 +504,30 @@ a {
   padding: 30px 0;
   background: #F5F5FA;
 }
+.achievements:hover .achievements-img {
+  transition: 0.9s;
+  animation: shake-logo 0.4s linear;
+}
+@keyframes shake-logo {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .achievements__title {
   font-size: 14px;
   font-weight: 700;
@@ -517,6 +541,7 @@ a {
   flex-direction: column;
 }
 .achievements__slider .carousel-inner {
+  overflow: visible;
   margin-bottom: 30px;
 }
 .achievements__slider .carousel-item {
@@ -530,6 +555,11 @@ a {
   height: 110px;
   background: white;
   border-radius: 12px;
+}
+.achievements__slider .carousel-item .achievements-img:hover {
+  box-shadow: 5px 5px 15px #F0145A;
+  transform: scale(1.02);
+  transition: 0.6s;
 }
 .achievements__slider .active {
   opacity: 1;

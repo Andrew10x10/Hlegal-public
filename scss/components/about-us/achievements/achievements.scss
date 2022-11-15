@@ -2,6 +2,32 @@
   padding: 30px 0;
   background: $grey-bg;
 
+  &:hover .achievements-img {
+    transition: .9s;
+    animation: shake-logo 0.4s linear;
+    @keyframes shake-logo {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(-2px, -2px);
+      }
+      60% {
+        transform: translate(2px, 2px);
+      }
+      80% {
+        transform: translate(2px, -2px);
+      }
+      100% {
+        transform: translate(0);
+      }
+
+    }
+
+  }
   &__title {
     font-size: $font-s;
     font-weight: $font-bold;
@@ -18,6 +44,7 @@
 
   &__slider {
     .carousel-inner{
+      overflow: visible;
       margin-bottom: 30px;
     }
     .carousel-item {
@@ -32,7 +59,11 @@
         background: white;
         @extend %d-center;
         border-radius: $default-border-radius;
-
+        &:hover {
+          box-shadow: 5px 5px 15px  $accent-color ;
+          transform: scale(1.02);
+          transition: .6s;
+        }
       }
     }
     .active{
@@ -48,5 +79,7 @@
       }
 
     }
+
     }
+
 }
