@@ -59,7 +59,7 @@
         background: white;
         @extend %d-center;
         border-radius: $default-border-radius;
-        &:hover {
+        &:hover{
           box-shadow: 5px 5px 15px  $accent-color ;
           transform: scale(1.02);
           transition: .6s;
@@ -67,6 +67,8 @@
       }
     }
     .active{
+      position: absolute;
+      z-index: 2;
       opacity: 1;
     }
     .carousel-indicators{
