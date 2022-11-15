@@ -1,0 +1,52 @@
+.achievements {
+  padding: 30px 0;
+  background: $grey-bg;
+
+  &__title {
+    font-size: $font-s;
+    font-weight: $font-bold;
+    color: $main-color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+  }
+
+  &__slider {
+    .carousel-inner{
+      margin-bottom: 30px;
+    }
+    .carousel-item {
+      opacity: 0;
+      display: flex;
+      gap: 40px;
+      width: 100%;
+
+      .achievements-img {
+        width: calc(100% / 4);
+        height: 110px;
+        background: white;
+        @extend %d-center;
+        border-radius: $default-border-radius;
+
+      }
+    }
+    .active{
+      opacity: 1;
+    }
+    .carousel-indicators{
+      position: unset;
+      [data-bs-target]{
+        width: 16px;
+        height: auto;
+        background: $active-regular;
+        border-radius: $border-radius-50;
+      }
+
+    }
+    }
+}
