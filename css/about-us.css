@@ -215,6 +215,7 @@ a {
   transition: 0.5s;
 }
 .header .navbar .nav-link.active {
+  color: #F0145A;
   border-bottom: 2px solid;
 }
 

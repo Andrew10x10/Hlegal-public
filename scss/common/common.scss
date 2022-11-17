@@ -41,11 +41,49 @@ a {
 .container-lg{
   --bs-gutter-x: 60px;
 }
-
+.btn{
+  padding: 18px 0;
+  border: none;
+  @extend %font-sm;
+  color: $white-color;
+  background: $active-regular;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: $default-border-radius;
+  &:hover {
+    background: #0085FF;
+  }
+  &:active {
+    background: #006CCF;
+  }
+}
 
 @media (min-width: 1600px) {
   .container {
     max-width: 1600px;
   }
 }
+.navbar {
+  &-brand {
+    margin-top: -20px;
 
+    &:hover .navbar-brand-way {
+      color: $accent-color;
+      transition: .8s;
+      box-shadow: 0 0 65px -20px black;
+    }
+
+    .slash-nav {
+      margin-bottom: 14px;
+    }
+
+    &-way {
+      font-size: $font-way;
+      line-height: 44px;
+      color: $main-color;
+
+      &:hover, .navbar-brand {
+        color: $accent-color;
+      }
+    }
+  }
+}

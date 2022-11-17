@@ -142,6 +142,7 @@
       }
 
       &.active {
+        color: $accent-color;
         border-bottom: 2px solid;
       }
     }

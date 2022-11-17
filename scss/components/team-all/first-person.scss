@@ -1,3 +1,24 @@
 .first-person{
+  &__wrapper{
+    gap: 60px;
+  }
+  &__img{
+    width: 400px;
+    height: 500px;
+    border-radius: $default-border-radius;
+  }
+  &__info-text{}
+  &__inner-wrapper{
+    width: 100%
+  }
+  &__info-link{
+    flex-direction: column;
+    gap: 10px;
+    p{
+      margin: 0;
+    }
+  }
+  &__name{}
+  &__info-d-none{}
 
 }
