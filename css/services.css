@@ -39,7 +39,7 @@
   --bs-list-group-disabled-bg: none;
 }
 
-.our-service__description h3 {
+.articles__heading-title, .service-info__title, .our-service__description h3 {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,12 +50,12 @@
   font-size: 14px;
 }
 
-.footer__number a, .footer__email a, .btn {
+.footer__number a, .footer__email a, .articles__wrapper-card-wrap-title, .btn {
   font-weight: 700;
   font-size: 16px;
 }
 
-.our-service__description h3 {
+.articles__heading-title, .service-info__title, .our-service__description h3 {
   font-weight: 700;
   font-size: 38px;
 }
@@ -70,7 +70,7 @@
   transition: 0.5s;
 }
 
-.our-service__description a {
+.articles__heading a, .our-service__description a {
   display: block;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -78,15 +78,15 @@
   font-weight: 700;
   color: #0085FF;
 }
-.our-service__description a:hover, .our-service__description a:focus-visible {
+.articles__heading a:hover, .our-service__description a:hover, .articles__heading a:focus-visible, .our-service__description a:focus-visible {
   color: #F0145A;
   transition: 0.5s;
   transform: scaleX(1.02) translate(15px);
 }
-.our-service__description a svg {
+.articles__heading a svg, .our-service__description a svg {
   width: 20px;
 }
-.our-service__description a:hover path, .our-service__description a:hover svg, .our-service__description a:focus-visible path, .our-service__description a:focus-visible svg {
+.articles__heading a:hover path, .our-service__description a:hover path, .articles__heading a:hover svg, .our-service__description a:hover svg, .articles__heading a:focus-visible path, .our-service__description a:focus-visible path, .articles__heading a:focus-visible svg, .our-service__description a:focus-visible svg {
   stroke: #F0145A;
   transition: 0.5s;
   transform: translate(20%);
@@ -96,6 +96,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.articles .image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 html {
@@ -151,9 +159,25 @@ a {
 }
 .btn:hover {
   background: #0085FF;
+  color: white;
+  transition: 0.5s;
+  transform: perspective(300px) rotateX(45deg);
 }
 .btn:active {
-  background: #006CCF;
+  --bs-btn-active-bg: #006CCF;
+  --bs-btn-active-color: #fff;
+}
+
+.d-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.grey-line {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px 0;
+  border-top: 4px solid;
+  opacity: inherit;
 }
 
 @media (min-width: 1600px) {
@@ -377,6 +401,9 @@ a {
   margin-bottom: 15px;
   font-size: 22px;
 }
+.our-service__info-columns a:hover img {
+  border-top: 10px;
+}
 .our-service__info-columns p {
   font-size: 16px;
   color: #fff;
@@ -404,14 +431,6 @@ a {
   .our-service__description h3 {
     font-size: 30px;
   }
-}
-
-.our-service {
-  padding-top: 176px;
-}
-
-.navbar-brand-way {
-  color: #fff;
 }
 
 .company {
@@ -516,6 +535,193 @@ a {
 @media (max-width: 1440px) {
   .company .container {
     min-width: 100%;
+  }
+}
+
+.services .company {
+  padding: 80px 0 0 0;
+}
+.services .our-service {
+  padding-top: 176px;
+}
+.services .navbar-brand-way {
+  color: #fff;
+}
+.services .footer__line {
+  display: none;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .our-service {
+    padding-top: 260px;
+  }
+}
+.navbar-brand-way {
+  color: #fff;
+}
+
+.service-info {
+  padding: 176px 0 60px;
+}
+.service-info__first-block {
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+.service-info__first-block img {
+  margin-bottom: 28px;
+}
+.service-info__first-block .btn {
+  margin-top: 28px;
+  padding: 18px 30px;
+}
+.service-info__title {
+  margin-bottom: 28px;
+}
+.service-info__text {
+  font-size: 19px;
+  color: #fff;
+}
+.service-info__second-block {
+  padding-top: 15px;
+}
+.service-info__second-block .grey-line {
+  margin-bottom: 30px;
+}
+.service-info__second-block-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+.service-info__second-block ul {
+  width: 50%;
+}
+.service-info__second-block ul li {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.service-info__second-block ul li::marker {
+  color: #F0145A;
+}
+
+.bg-gradient {
+  margin-bottom: 60px;
+}
+
+.our-service__wrap:hover {
+  animation: shake-logo 0.3s linear;
+}
+@keyframes shake-logo {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.our-service__wrap:hover a {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .service-info {
+    padding-top: 260px;
+  }
+}
+@media (max-width: 576px) {
+  .service-info__second-block-inner {
+    flex-wrap: wrap;
+  }
+  .service-info__second-block ul {
+    width: 100%;
+  }
+}
+
+.articles {
+  padding-top: 30px;
+  background-color: #F5F5FA;
+}
+.articles__heading-link {
+  margin-bottom: 10px;
+}
+.articles__heading-title {
+  margin-bottom: 30px;
+}
+.articles__wrapper {
+  gap: 30px;
+}
+.articles__wrapper-card {
+  flex: 1 1 30%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.articles__wrapper-card-wrap {
+  padding: 30px;
+}
+.articles__wrapper-card-wrap-title {
+  color: #24A3FF;
+}
+.articles__wrapper-card-wrap-data {
+  font-weight: 700;
+  font-size: 12px;
+  color: #B3B3BA;
+  letter-spacing: 1px;
+}
+.articles__wrapper-card-wrap-line {
+  margin: 15px 0;
+  border: 2px solid;
+  color: #E6E6F0;
+  opacity: 1;
+}
+.articles__wrapper-card-wrap-text {
+  font-size: 14px;
+}
+.articles__wrapper-card-photo {
+  height: 200px;
+  overflow: hidden;
+}
+.articles .image-publication-1 {
+  background-image: url("../assets/img/publication/Publication-1.png");
+}
+.articles .image-publication-2 {
+  background-image: url("../assets/img/publication/Publication-2.png");
+}
+.articles .image-publication-3 {
+  background-image: url("../assets/img/publication/Publication-3.png");
+}
+
+@media (min-width: 1600px) {
+  .articles .container-lg {
+    max-width: 1600px;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .articles__wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .articles__heading-title {
+    font-size: 30px;
+  }
+  .articles__wrapper {
+    flex-wrap: wrap;
+  }
+  .articles__wrapper-card {
+    flex: 1 1 100%;
   }
 }
 
