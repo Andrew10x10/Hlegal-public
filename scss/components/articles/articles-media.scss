@@ -4,13 +4,18 @@
       max-width: 1600px;
     }
   }
-
-
-  @media (max-width: 992px) and (min-width: 576px) {
-    &__wrapper {
-          flex-wrap: wrap;
+  @media(max-width: 1600px){
+    .container-lg{
+      min-width: 94%;
     }
   }
+@media (max-width: 992px) {
+ &__wrapper-card{
+   flex: 1 1 47%;
+ }
+
+}
+
   @media (max-width: 576px) {
     &__heading{
       &-title{
@@ -18,7 +23,6 @@
       }
     }
     &__wrapper {
-      flex-wrap: wrap;
       &-card {
         flex: 1 1 100%
       }
