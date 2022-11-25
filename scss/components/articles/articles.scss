@@ -1,6 +1,7 @@
 .articles {
-  padding-top: $p-30;
+  padding-top: calc(#{$p-30} * 2);
   background-color: $grey-bg;
+
   &__top-btn {
     gap: 2px;
     overflow: hidden;
@@ -47,7 +48,7 @@
   &__wrapper {
     gap: $g-30;
     flex-wrap: wrap;
-    padding: 30px;
+    //padding-bottom: 30px;
     &-card {
       flex: 1 1 30%;
       background: $white-color;
@@ -100,9 +101,13 @@
       }
     }
   }
+  &__btn-wrapper{
+    padding-top: 30px;
+  }
   &__btn{
     padding: 18px 30px;
   }
+
   .image {
     @extend %picture;
 

@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d70c9d22-c370-4bed-9fee-c44f6bb0d3ec" name="Changes" comment="add html publication and other">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/publication/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/publication/gdpr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/publication/google-account.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/publication/linkedIn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/publication/teleg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/publication-more.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/publication-more/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/publication-more/publication-more-media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/publication-more/publication-more.scss" afterDir="false" />
+    <list default="true" id="d70c9d22-c370-4bed-9fee-c44f6bb0d3ec" name="Changes" comment="add update">
+      <change afterPath="$PROJECT_DIR$/assets/print-screen-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/print-screen-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/print-screen-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/print-screen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about-us.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/about-us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/about-us.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/contact.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/homepage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/homepage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/homepage.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/publication.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/publication.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/publication.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/publication.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/services.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/services.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/services.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/team-all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/team-all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/team-all.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/team-all.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/publication.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/publication.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/services-entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/services-entry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/team-person-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/team-person-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/common/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/articles/articles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/articles/articles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/publication.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/publication.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/services/services-entry.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/services/services-entry.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +119,7 @@
       <workItem from="1669320539190" duration="2789000" />
       <workItem from="1669323360526" duration="4000" />
       <workItem from="1669323781613" duration="1229000" />
-      <workItem from="1669405582749" duration="1100000" />
+      <workItem from="1669405582749" duration="3498000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1666042958574</created>
@@ -403,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669159090575</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="add update">
+      <created>1669406722098</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1669406722098</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,6 +473,7 @@
     <MESSAGE value="update services block &#10;update team block &#10;update contact block" />
     <MESSAGE value="update" />
     <MESSAGE value="add html publication and other" />
-    <option name="LAST_COMMIT_MESSAGE" value="add html publication and other" />
+    <MESSAGE value="add update" />
+    <option name="LAST_COMMIT_MESSAGE" value="add update" />
   </component>
 </project>

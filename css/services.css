@@ -637,10 +637,6 @@ a {
   color: #F0145A;
 }
 
-.bg-gradient {
-  margin-bottom: 60px;
-}
-
 .our-service__wrap:hover {
   animation: shake-logo 0.3s linear;
 }
@@ -683,7 +679,7 @@ a {
 }
 
 .articles {
-  padding-top: 30px;
+  padding-top: calc(30px * 2);
   background-color: #F5F5FA;
 }
 .articles__top-btn {
@@ -721,7 +717,7 @@ a {
 .articles__wrapper {
   gap: 30px;
   flex-wrap: wrap;
-  margin: 30px 0;
+  padding-bottom: 30px;
 }
 .articles__wrapper-card {
   flex: 1 1 30%;

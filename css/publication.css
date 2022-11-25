@@ -405,7 +405,7 @@ a {
 }
 
 .articles {
-  padding-top: 30px;
+  padding-top: calc(30px * 2);
   background-color: #F5F5FA;
 }
 .articles__top-btn {
@@ -443,7 +443,6 @@ a {
 .articles__wrapper {
   gap: 30px;
   flex-wrap: wrap;
-  padding: 30px;
 }
 .articles__wrapper-card {
   flex: 1 1 30%;
@@ -491,6 +490,9 @@ a {
 .articles__wrapper-card-photo {
   height: 200px;
   overflow: hidden;
+}
+.articles__btn-wrapper {
+  padding-top: 30px;
 }
 .articles__btn {
   padding: 18px 30px;
