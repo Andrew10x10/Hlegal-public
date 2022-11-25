@@ -1,8 +1,37 @@
 .articles {
   padding-top: $p-30;
   background-color: $grey-bg;
+  &__top-btn {
+    gap: 2px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 233px;
+    background: $grey-bg-separator;
+    border: 2px solid $grey-bg-separator;
+    border-radius: $default-border-radius;
+    margin: 0 auto 30px;
 
+    input[name=articles-btn] {
+      display: none;
+    }
+
+    span {
+      cursor: pointer;
+      font-weight: 700;
+      padding: 6px 27px;
+      border-radius: 8px;
+      display: inline-block;
+      color: $main-color;
+    }
+
+    input[name="articles-btn"]:checked + span {
+      background-color: $white-color;
+    }
+  }
   &__heading {
+    margin-bottom: 30px;
     @extend %section-link;
 
     &-link {
@@ -11,7 +40,6 @@
 
     &-title {
       @extend %red-gradient;
-      margin-bottom: 30px;
       @extend %font-big;
     }
   }
@@ -19,6 +47,7 @@
   &__wrapper {
     gap: $g-30;
     flex-wrap: wrap;
+    padding: 30px;
     &-card {
       flex: 1 1 30%;
       background: $white-color;
@@ -70,6 +99,9 @@
         overflow: hidden;
       }
     }
+  }
+  &__btn{
+    padding: 18px 30px;
   }
   .image {
     @extend %picture;

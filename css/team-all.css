@@ -113,13 +113,16 @@ a {
 }
 .btn:hover {
   background: #0085FF;
-  color: white;
+  color: #fff;
   transition: 0.5s;
   transform: perspective(300px) rotateX(45deg);
+  border-bottom: 1px solid #323264;
+  box-shadow: 0 5px 3px rgb(36, 163, 255);
 }
 .btn:active {
   --bs-btn-active-bg: #006CCF;
   --bs-btn-active-color: #fff;
+  border-bottom: none;
 }
 
 .d-center {

@@ -45,6 +45,7 @@ a {
   --bs-gutter-x: 60px;
 }
 
+
 .btn {
   padding: 18px 0;
   border: none;
@@ -56,15 +57,17 @@ a {
 
   &:hover {
     background: #0085FF;
+    color: $white-color;
     transition: .5s;
     transform: perspective(300px) rotateX(45deg);
-    border-bottom: 1px solid $main-color;
+    border-bottom: 1px solid #323264;
     box-shadow: 0 5px 3px rgb(36 163 255);
   }
 
   &:active {
   --bs-btn-active-bg: #006CCF;
   --bs-btn-active-color: #{$white-color};
+    border-bottom: none;
   }
 }
 

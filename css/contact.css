@@ -113,9 +113,28 @@ a {
 }
 .btn:hover {
   background: #0085FF;
+  color: #fff;
+  transition: 0.5s;
+  transform: perspective(300px) rotateX(45deg);
+  border-bottom: 1px solid #323264;
+  box-shadow: 0 5px 3px rgb(36, 163, 255);
 }
 .btn:active {
-  background: #006CCF;
+  --bs-btn-active-bg: #006CCF;
+  --bs-btn-active-color: #fff;
+  border-bottom: none;
+}
+
+.d-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.grey-line {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px 0;
+  border-top: 4px solid;
+  opacity: inherit;
 }
 
 @media (min-width: 1600px) {
@@ -123,6 +142,26 @@ a {
     max-width: 1600px;
   }
 }
+.navbar-brand {
+  margin-top: -20px;
+}
+.navbar-brand:hover .navbar-brand-way {
+  color: #F0145A;
+  transition: 0.8s;
+  box-shadow: 0 0 65px -20px black;
+}
+.navbar-brand .slash-nav {
+  margin-bottom: 14px;
+}
+.navbar-brand-way {
+  font-size: 36px;
+  line-height: 44px;
+  color: #323264;
+}
+.navbar-brand-way:hover, .navbar-brand-way .navbar-brand {
+  color: #F0145A;
+}
+
 .header {
   width: 100%;
   padding: 50px 0 30px;

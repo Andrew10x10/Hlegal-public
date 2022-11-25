@@ -39,7 +39,7 @@
   --bs-list-group-disabled-bg: none;
 }
 
-.articles__heading-title {
+.publication-more__wrapper-gradient, .articles__heading-title {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,7 +82,7 @@
   transform: translate(20%);
 }
 
-.articles .image {
+.publication-more .image, .articles .image {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -143,6 +143,7 @@ a {
 }
 .btn:hover {
   background: #0085FF;
+  color: #fff;
   transition: 0.5s;
   transform: perspective(300px) rotateX(45deg);
   border-bottom: 1px solid #323264;
@@ -151,6 +152,7 @@ a {
 .btn:active {
   --bs-btn-active-bg: #006CCF;
   --bs-btn-active-color: #fff;
+  border-bottom: none;
 }
 
 .d-center {
@@ -406,15 +408,42 @@ a {
   padding-top: 30px;
   background-color: #F5F5FA;
 }
+.articles__top-btn {
+  gap: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  width: 233px;
+  background: #E6E6F0;
+  border: 2px solid #E6E6F0;
+  border-radius: 12px;
+  margin: 0 auto 30px;
+}
+.articles__top-btn input[name=articles-btn] {
+  display: none;
+}
+.articles__top-btn span {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 6px 27px;
+  border-radius: 8px;
+  display: inline-block;
+  color: #323264;
+}
+.articles__top-btn input[name=articles-btn]:checked + span {
+  background-color: #fff;
+}
+.articles__heading {
+  margin-bottom: 30px;
+}
 .articles__heading-link {
   margin-bottom: 10px;
-}
-.articles__heading-title {
-  margin-bottom: 30px;
 }
 .articles__wrapper {
   gap: 30px;
   flex-wrap: wrap;
+  padding: 30px;
 }
 .articles__wrapper-card {
   flex: 1 1 30%;
@@ -463,6 +492,9 @@ a {
   height: 200px;
   overflow: hidden;
 }
+.articles__btn {
+  padding: 18px 30px;
+}
 .articles .image-publication-1 {
   background-image: url("../assets/img/publication/Publication-1.png");
 }
@@ -500,6 +532,115 @@ a {
   }
   .articles__wrapper-card {
     flex: 1 1 100%;
+  }
+}
+
+.publication-more {
+  padding: 30px 0;
+}
+.publication-more .container-small {
+  padding: 0 60px;
+  margin: 0 auto;
+}
+.publication-more__wrap-picture {
+  border-radius: 12px;
+  height: 500px;
+  overflow: hidden;
+}
+.publication-more__picture-gdpr {
+  background-image: url("../assets/img/publication/gdpr.png");
+}
+.publication-more__img-wrapper {
+  max-width: 640px;
+  margin: 30px auto;
+}
+.publication-more__img-wrapper img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.publication-more__wrapper-title {
+  margin: 30px 0;
+  font-weight: 700;
+  font-size: 30px;
+  color: #323264;
+}
+.publication-more__wrapper-title-sm {
+  font-size: 22px;
+}
+.publication-more__wrapper-gradient {
+  font-size: 38px;
+}
+.publication-more__wrapper-data {
+  font-weight: 700;
+  font-size: 12px;
+  color: #B3B3BA;
+  letter-spacing: 1px;
+}
+.publication-more__wrapper-text {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.publication-more__wrapper-text-sm {
+  font-size: 14px;
+  color: #B3B3BA;
+  text-align: center;
+}
+.publication-more__wrapper ol {
+  padding-left: 2.5rem;
+  margin: 30px 0;
+}
+.publication-more__wrapper ol li {
+  font-size: 18px;
+}
+.publication-more__wrapper ol li::marker {
+  font-weight: 700;
+  font-size: 18px;
+  color: #F0145A;
+}
+.publication-more__wrapper-social {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.publication-more__wrapper-social a {
+  padding: 5px 9px 9px;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+.publication-more__wrapper-social a:hover {
+  background: #EDEDF7;
+  scale: 1.1;
+}
+.publication-more .grey-line {
+  border-top: 4px solid #E6E6F0;
+  margin: 30px 0;
+}
+
+@media (min-width: 1600px) {
+  .publication-more .container-small {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1400px) {
+  .publication-more .container-small {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 576px) {
+  .publication-more .container-small {
+    padding: 0 30px;
+  }
+  .publication-more__wrap-picture {
+    height: 300px;
+  }
+  .publication-more__wrapper-title {
+    font-size: 20px;
+  }
+  .publication-more__wrapper-title-sm {
+    font-size: 16px;
+  }
+  .publication-more__wrapper-gradient {
+    font-size: 30px;
   }
 }
 

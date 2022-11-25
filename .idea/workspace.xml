@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d70c9d22-c370-4bed-9fee-c44f6bb0d3ec" name="Changes" comment="update block about-us">
-      <change afterPath="$PROJECT_DIR$/.idea/Hlegal-public.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace 2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/about-us/ending/ending-media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/about-us/ending/ending.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/about-us/ending/index.scss" afterDir="false" />
+    <list default="true" id="d70c9d22-c370-4bed-9fee-c44f6bb0d3ec" name="Changes" comment="add html publication and other">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/publication/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/publication/gdpr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/publication/google-account.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/publication/linkedIn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/publication/teleg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/publication-more.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/components/publication-more/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/components/publication-more/publication-more-media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/components/publication-more/publication-more.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/about-us.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about-us.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/about-us.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/about-us.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/about-us.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/about-us.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/about-us/intro/intro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/about-us/intro/intro.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contact.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/homepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/homepage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/homepage.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/publication.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/publication.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/publication.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/publication.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/services.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/services.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/team-all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/team-all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/team-all.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/team-all.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/publication.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/publication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/services-entry.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/services-entry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/team-person-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/team-person-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/articles/articles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/articles/articles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/publication.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/publication.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -33,7 +52,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,8 +72,10 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/andre/Desktop/webstorm-project/Hlegal-public/scss/components&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -69,11 +89,11 @@
       <recent name="$PROJECT_DIR$/scss/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scss/components/services" />
+      <recent name="$PROJECT_DIR$/scss/components/team-all" />
+      <recent name="$PROJECT_DIR$/scss" />
       <recent name="$PROJECT_DIR$/scss/components" />
       <recent name="$PROJECT_DIR$/scss/components/about-us" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/html" />
-      <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -106,7 +126,16 @@
       <workItem from="1667734882761" duration="17984000" />
       <workItem from="1667931155805" duration="14000" />
       <workItem from="1667931530313" duration="67587000" />
-      <workItem from="1668461788549" duration="1374000" />
+      <workItem from="1668461788549" duration="59450000" />
+      <workItem from="1668717654059" duration="22968000" />
+      <workItem from="1669040341191" duration="4130000" />
+      <workItem from="1669055285575" duration="3535000" />
+      <workItem from="1669060781497" duration="25233000" />
+      <workItem from="1669299486387" duration="4717000" />
+      <workItem from="1669320539190" duration="2789000" />
+      <workItem from="1669323360526" duration="4000" />
+      <workItem from="1669323781613" duration="1229000" />
+      <workItem from="1669405582749" duration="1100000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1666042958574</created>
@@ -304,7 +333,77 @@
       <option name="project" value="LOCAL" />
       <updated>1668291994226</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update block about-us">
+      <created>1668463171147</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1668463171147</updated>
+    </task>
+    <task id="LOCAL-00030" summary="update block about-us (second slider and media)">
+      <created>1668471571848</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1668471571848</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update block about-us">
+      <created>1668477722852</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1668477722852</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update block team">
+      <created>1668540449160</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1668540449160</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update block team">
+      <created>1668540511313</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1668540511313</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update services block &#10;update team block &#10;update contact block">
+      <created>1668682317545</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1668682317545</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update services block &#10;update team block &#10;update contact block">
+      <created>1668682982554</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668682982554</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update">
+      <created>1668683079284</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668683079284</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update">
+      <created>1669061400884</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1669061400884</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add html publication and other">
+      <created>1669159090575</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1669159090575</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +449,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -365,8 +476,12 @@
     <MESSAGE value="update footer" />
     <MESSAGE value="update footer media" />
     <MESSAGE value="updated the slider and some more blocks" />
-    <MESSAGE value="update" />
+    <MESSAGE value="update block about-us (second slider and media)" />
     <MESSAGE value="update block about-us" />
-    <option name="LAST_COMMIT_MESSAGE" value="update block about-us" />
+    <MESSAGE value="update block team" />
+    <MESSAGE value="update services block &#10;update team block &#10;update contact block" />
+    <MESSAGE value="update" />
+    <MESSAGE value="add html publication and other" />
+    <option name="LAST_COMMIT_MESSAGE" value="add html publication and other" />
   </component>
 </project>
